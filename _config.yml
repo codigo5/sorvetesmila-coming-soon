@@ -5,11 +5,11 @@ gems:
   - font-awesome-sass
 
 # Site
-title: Código5 - Em breve estaremos no ar - Página em construção
+title: Sorvetes Mila - Em breve estaremos no ar - Página em construção - Código5 WEB
 description:
 baseurl: ""
-url: ""
-favicon: false
+url: "http://www.sorvetesmila.com.br"
+favicon: favicon.ico
 exclude:
   - Gemfile*
   - bower.json
@@ -28,17 +28,17 @@ google_site_verificatio: false
 
 # Company
 company:
-  name: 'Código5'
-  brand_img: 'codigo5-brand.png'
-  brand_img_alt: 'Código5 Web - Logo'
-  google_maps_url: 'https://www.google.com.br/maps/@-15.571553,-56.0616873,16.5z?hl=pt-BR'
-  address: 'Rua 3, Nº 2 - Morada do Ouro, Setor Centro Sul - Cuiabá/MT, 78053-208'
+  name: 'Sorvetes Mila'
+  brand_img: 'logo_marca_mila_sorvetes.png'
+  brand_img_alt: 'Sorvetes Mila - Logo'
+  google_maps_url: 'https://www.google.com.br/maps/place/Av.+Gov.+J%C3%BAlio+Campos,+6237+-+Santa+Isabel,+V%C3%A1rzea+Grande+-+MT/@-15.6447619,-56.1801851,2617m/data=!3m1!1e3!4m5!3m4!1s0x939dad66ed33608d:0x94d037c55a2e566c!8m2!3d-15.6419451!4d-56.1766046?hl=pt-BR'
+  address: 'Av. Julio Campos, 6237 - Varzea Grande-MT'
   phones:
     - icon: phone
-      number: '(65) 2129-3819'
-    - icon: whatsapp
-      number: '(65) 9625-5106'
-  email: suporte@codigo5.com.br
+      number: '(65) 30530337'
+    - icon: phone
+      number: '(65) 3053-3333'
+  email: milasorvetes@hotmail.com
 
 # Build
 markdown: kramdown
