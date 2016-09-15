@@ -1,0 +1,13 @@
+{
+  "name": "codigo5-coming-soon",
+  "authors": [
+    "Dhyego Fernando <dhyegofernando@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "foundation": "^5.5.3",
+    "animate.css": "^3.5.2",
+    "wow": "^1.1.2"
+  }
+}

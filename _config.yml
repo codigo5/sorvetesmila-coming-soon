@@ -1,0 +1,56 @@
+# Dependencies
+gems:
+  - jekyll-sitemap
+  - jekyll-assets
+  - font-awesome-sass
+
+# Site
+title: Código5 - Em breve estaremos no ar - Página em construção
+description:
+baseurl: ""
+url: ""
+favicon: false
+exclude:
+  - Gemfile*
+  - bower.json
+  - Guardfile
+  - scripts
+
+
+# Google Analytics
+google_analytics: false
+
+# Google Tag Manager
+google_tagmanager: false
+
+# Google site verification
+google_site_verificatio: false
+
+# Company
+company:
+  name: 'Código5'
+  brand_img: 'codigo5-brand.png'
+  brand_img_alt: 'Código5 Web - Logo'
+  google_maps_url: 'https://www.google.com.br/maps/@-15.571553,-56.0616873,16.5z?hl=pt-BR'
+  address: 'Rua 3, Nº 2 - Morada do Ouro, Setor Centro Sul - Cuiabá/MT, 78053-208'
+  phones:
+    - icon: phone
+      number: '(65) 2129-3819'
+    - icon: whatsapp
+      number: '(65) 9625-5106'
+  email: suporte@codigo5.com.br
+
+# Build
+markdown: kramdown
+
+# Sprockets
+assets:
+  prefix: "/assets"
+  sources:
+    - _assets/bower
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
+  features:
+    liquid: true

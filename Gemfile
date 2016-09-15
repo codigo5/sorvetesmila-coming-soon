@@ -1,0 +1,12 @@
+source 'https://rubygems.org'
+
+gem 'jekyll'
+gem 'jekyll-sitemap'
+gem 'jekyll-assets'
+gem 'uglifier'
+gem 'sprockets-es6'
+gem 'guard'
+gem 'guard-jekyll-plus'
+gem 'guard-livereload'
+gem 'thin'
+gem 'font-awesome-sass'

@@ -1,0 +1,21 @@
+@import 'global';
+
+.cod5 {
+  &__brand,
+  &__separator,
+  &__heart {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__brand {
+    max-width: 150px;
+  }
+
+  &__heart {
+    margin: 0 20px;
+    color: #ffa2a2;
+    font-size: 2rem;
+    line-height: 0;
+  }
+}

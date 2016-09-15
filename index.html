@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+<div class="container container--flex container--full">
+  <div class="content">
+    <div class="cod5">
+      <a href="http://www.codigo5.com.br/?utm_source={{ site.title | escape }} ({{ site.url }})" target="_blank" title="Código5" alt="Código5" class="cod5__brand wow bounceIn" data-wow-delay="300ms">
+        {% img 'codigo5-brand.png' width:157 %}
+      </a>
+      <div class="cod5__separator">
+        <span class="cod5__heart animated infinite pulse">&#10084;</span>
+      </div>
+      <a href="{{ site.url }}" title="{{ site.company.name }}" alt="{{ site.company.name }}" class="cod5__brand wow bounceIn" data-wow-delay="800ms">
+        {% img '{{ site.company.brand_img }}' width:157 alt:'{{ site.company.brand_img_alt }}' %}
+      </a>
+    </div>
+    <div class="hero wow zoomIn" data-wow-delay="1000ms">
+      <h1 class="hero__title wow fadeInDown" data-wow-delay="1400ms" data-wow-duration="800ms">Em breve :)</h1>
+      <p class="hero__subtitle wow fadeInUp" data-wow-delay="1600ms" data-wow-duration="1200ms">A equipe da <a href="http://www.codigo5.com.br/?utm_source={{ site.title | escape }} ({{ site.url }})" target="_blank" title="Código5" alt="Código5">Código5</a> está trabalhando exatamente neste momento no nosso novo site.<br>Enquanto isso, fique à vontade para falar conosco, ok?</p>
+    </div>
+    {% assign time_base = 2200 %}
+    {% assign time_delay_base = 400 %}
+    {% assign time_delay = 0 %}
+    {% if site.company.address %}
+      {% assign time_delay = time_delay | plus: time_delay_base %}
+      <div class="wow fadeInUp" data-wow-delay="{{ time_base + time_delay }}ms">
+        <i class="fa fa-map-marker"></i>
+        {% if site.company.google_maps_url %}
+          <a href="{{ site.company.google_maps_url }}" class="hero__link" target="_blank">
+            <address class="hero__address">{{ site.company.address }}</address>
+          </a>
+        {% else %}
+          {{ site.company.address }}
+        {% endif %}
+      </div>
+    {% endif %}
+    {% for phone in site.company.phones %}
+      {% assign time_delay = time_delay | plus: time_delay_base %}
+      <p class="wow fadeInUp" data-wow-delay="{{ time_base | plus: time_delay }}ms"><i class="fa fa-{{ phone.icon }}"></i> <a href="tel:{{ phone.number }}" class="hero__link">{{ phone.number }}</a></p>
+    {% endfor %}
+    {% if site.company.email %}
+      {% assign time_delay = time_delay | plus: time_delay_base %}
+      <p class="wow fadeInUp" data-wow-delay="{{ time_base | plus: time_delay }}ms"><i class="fa fa-envelope"></i> <a href="mailto:{{ site.company.email }}" class="hero__link">{{ site.company.email }}</a></p>
+    {% endif %}
+  </div>
+</div>
