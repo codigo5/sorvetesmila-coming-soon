@@ -45,7 +45,7 @@ layout: default
     {% endif %}
     {% if site.company.link %}
       {% assign time_delay = time_delay | plus: time_delay_base %}
-      <p class="wow fadeInUp" data-wow-delay="{{ time_base | plus: time_delay }}ms"><i class="fa fa-external-link" aria-hidden="true"></i><a href="{{ site.company.link }}" class="hero__link">{{ site.company.linktexto }}</a></p>
+      <p class="wow fadeInUp" data-wow-delay="{{ time_base | plus: time_delay }}ms"><i class="fa fa-external-link" aria-hidden="true"></i> <a target="_blank" href="{{ site.company.link }}" class="hero__link">{{ site.company.linktexto }}</a></p>
     {% endif %}
   </div>
 </div>
