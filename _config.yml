@@ -35,10 +35,12 @@ company:
   address: 'Av. Julio Campos, 6237 - Varzea Grande-MT'
   phones:
     - icon: phone
-      number: '(65) 30530337'
+      number: '(65) 3053-0337'
     - icon: phone
       number: '(65) 3053-3333'
   email: milasorvetes@hotmail.com
+  link: "https://goo.gl/forms/KffgQwxVu5o5NwPJ3"
+  linktexto: "Seja Um representante"
 
 # Build
 markdown: kramdown
